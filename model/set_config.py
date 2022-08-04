@@ -223,9 +223,9 @@ def set_configuration(district=Districts.ENAQ, excel_filename="DistrictData_20.0
 
     if chps.at[district, "capacity"] > 0:
         configuration["chp"] = {}
-        configuration["chp"]["p_kw"] = chps.at[district, "capacity"]
-        configuration["chp"]["p_kw_th"] = chps.at[district, "capacity"]*chps.at[district, "efficiency_heat"]
-        configuration["chp"]["p_kw_el"] = chps.at[district, "capacity"]*chps.at[district, "efficiency_el"]
+        configuration["chp"]["p_kw"] = chps.at[district, "capacity"]*1000
+        configuration["chp"]["p_kw_th"] = chps.at[district, "capacity"]*chps.at[district, "efficiency_heat"]*1000
+        configuration["chp"]["p_kw_el"] = chps.at[district, "capacity"]*chps.at[district, "efficiency_el"]*1000
         configuration["chp"]["eff_th"] = chps.at[district, "efficiency_heat"]
         configuration["chp"]["eff_el"] = chps.at[district, "efficiency_el"]
 
