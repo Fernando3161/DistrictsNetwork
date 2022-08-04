@@ -1,3 +1,6 @@
 matplotlib
 git+https://github.com/oemof/marketlib.git@main#egg=electricity-markets
 oemof.solph
+openpyxl
+seaborn
+xlsxwriter
