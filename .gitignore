@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+model/EnergyMarketPrice_2019.csv
+model/IntegratedSystem.oemof
+*.csv
